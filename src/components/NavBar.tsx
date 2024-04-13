@@ -12,11 +12,9 @@ import Person2OutlinedIcon from "@mui/icons-material/Person2Outlined";
 import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutlined";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 import SearchIcon from "@mui/icons-material/Search";
-
-//
+import Link from "next/link";
 
 import Drawer from "@mui/material/Drawer";
-import Button from "@mui/material/Button";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
@@ -157,15 +155,17 @@ export default function SearchAppBar() {
           >
             <AddShoppingCartOutlinedIcon />
           </IconButton>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="open drawer"
-            sx={{ mr: 2 }}
-          >
-            <Person2OutlinedIcon />
-          </IconButton>
+          <Link href={"/login"} className="text-xs underline">
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="open drawer"
+              sx={{ mr: 2 }}
+            >
+              <Person2OutlinedIcon />
+            </IconButton>
+          </Link>
         </Toolbar>
       </AppBar>
     </Box>
