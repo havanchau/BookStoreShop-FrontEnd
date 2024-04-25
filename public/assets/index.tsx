@@ -1,4 +1,4 @@
-const Image = {
+const Images = {
     banner: [
         require("./images/image-slide1.jpg"),
         require("./images/image-slide2.jpg"),
@@ -24,4 +24,10 @@ const Image = {
     ]
 };
 
-export default Image;
+const Icons = {
+    labelFlashSale: require("./icons/label-flashsale.svg"),
+    leftBtn: require("./icons/left-btn.svg"),
+    rightBtn: require("./icons/right-btn.svg"),
+}
+
+export { Images, Icons };
